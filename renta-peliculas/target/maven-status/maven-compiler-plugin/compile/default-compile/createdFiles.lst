@@ -1,0 +1,9 @@
+com\evaluacion\alquiler\model\DetalleAlquiler.class
+com\evaluacion\alquiler\model\Cliente.class
+com\evaluacion\alquiler\model\DetalleAlquiler$DetalleAlquilerId.class
+com\evaluacion\alquiler\model\Alquiler$EstadoAlquiler.class
+com\evaluacion\HolaServlet.class
+com\evaluacion\alquiler\util\JPAUtil.class
+com\evaluacion\alquiler\model\Pelicula.class
+com\evaluacion\App.class
+com\evaluacion\alquiler\model\Alquiler.class

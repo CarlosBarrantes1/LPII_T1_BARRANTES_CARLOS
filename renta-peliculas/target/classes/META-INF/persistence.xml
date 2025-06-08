@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="BD2_Barrantes" transaction-type="RESOURCE_LOCAL">
+    
+    <!-- aca se colocaran las entidades que se van a mapear -->
+    <class>com.evaluacion.alquiler.model.Clientes</class>
+    <class>com.evaluacion.alquiler.model.Peliculas</class>
+    <class>com.evaluacion.alquiler.model.Detalle_alquiler</class>
+    <class>com.evaluacion.alquiler.model.Alquileres</class>
+    
+    <properties>
+
+      <!-- Configuración de conexión a MySQL -->
+      <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/BD2_Barrantes?serverTimezone=UTC"/>
+      <property name="jakarta.persistence.jdbc.user" value="root"/>
+      <property name="jakarta.persistence.jdbc.password" value="123456"/>
+
+      <!-- Dialecto y generación del esquema -->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+      <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+      <!-- Mostrar SQL en consola -->
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+
+    </properties>
+  </persistence-unit>
+</persistence>
