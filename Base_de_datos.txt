@@ -1,0 +1,5 @@
+CREATE DATABASE BD2_Barrantes;
+SELECT * FROM cliente;
+SELECT * FROM alquiler;
+SELECT * FROM detallealquiler;
+SELECT * FROM pelicula;
